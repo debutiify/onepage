@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Onepage – Website Builder</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #fff;
+      color: #111;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+    }
+
+    header .logo {
+      font-size: 20px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    header .logo span {
+      background: #2563eb;
+      color: #fff;
+      font-weight: 700;
+      border-radius: 8px;
+      padding: 4px 8px;
+    }
+
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .btn-primary {
+      background-color: #2563eb;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px 40px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      font-weight: 800;
+      line-height: 1.3;
+    }
+
+    .hero h1 span {
+      font-style: italic;
+      color: #111;
+    }
+
+    .hero p {
+      font-size: 16px;
+      color: #555;
+      margin: 20px 0 40px;
+    }
+
+    .hero-buttons a {
+      background-color: #f3f4f6;
+      padding: 10px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #111;
+      margin: 0 6px;
+      font-weight: 500;
+    }
+
+    .hero-buttons a:hover {
+      background-color: #e5e7eb;
+    }
+
+    .mockup-section {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 60px;
+      padding: 40px 0 80px;
+    }
+
+    .mockup-bg {
+      position: absolute;
+      width: 80%;
+      height: 300px;
+      background-color: #0f1c8b;
+      border-radius: 16px;
+      z-index: 0;
+    }
+
+    .mockup {
+      position: relative;
+      z-index: 2;
+      background-color: #fff;
+      width: 850px;
+      border-radius: 12px;
+      box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .mockup img {
+      width: 100%;
+      display: block;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .cta a {
+      display: inline-block;
+      background-color: #2563eb;
+      color: white;
+      padding: 14px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .cta p {
+      font-size: 13px;
+      color: #666;
+      margin-top: 12px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      font-size: 13px;
+      color: #666;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+
+      .hero h1 {
+        font-size: 30px;
+      }
+
+      .mockup {
+        width: 90%;
+      }
+
+      .mockup-bg {
+        width: 90%;
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <span>O</span> Onepage
+    </div>
+    <nav>
+      <a href="#">Product</a>
+      <a href="#">Blog</a>
+      <a href="#">Pricing</a>
+      <a href="#">Changelog</a>
+      <a href="#" class="btn-primary">Proceed to builder</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>The website-building tool <br> you’ll <span>enjoy</span> using</h1>
+    <p>A new tool that helps you build and maintain Websites, Landing-pages, Mobile Linktrees, and Quizzes remarkably fast, all with one tool. It’s built for Agencies & Businesses</p>
+
+    <div class="hero-buttons">
+      <a href="#">Create page</a>
+      <a href="#">Enhance</a>
+      <a href="#">Edit page</a>
+      <a href="#">Get leads</a>
+    </div>
+  </section>
+
+  <section class="mockup-section">
+    <div class="mockup-bg"></div>
+    <div class="mockup">
+      <img src="https://i.ibb.co/qpKJY5s/website-mockup-example.jpg" alt="Mockup Image">
+    </div>
+  </section>
+
+  <div class="cta">
+    <a href="#">Create your free account</a>
+    <p>Onepage is free to use. It’s not a trial version.<br>No credit card is required.</p>
+  </div>
+
+  <footer>
+    © 2025 Onepage. All rights reserved.
+  </footer>
+
+</body>
+</html>
